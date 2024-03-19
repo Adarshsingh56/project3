@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.container{
+    width: 100vw;
+    margin: 0 auto;
+    height: 100vh;
+overflow: hidden;
+color: white;
+
+
+    
+    background-image: linear-gradient(#f9ce34,#ee2a7b, #6228d7);
+    display: grid;
+grid-template-columns:repeat(5,1fr) ;
+grid-template-rows: 70px 330px 240px;
+grid-template-areas: "me me me me me"
+                      "ad nd nd nd some"
+                      "em my my my some";
+
+
+gap:5px;
+}
+#me{
+    grid-area: me;
+}
+#adver{
+    grid-area: ad;
+}
+#emo{
+    grid-area: em;
+}
+#nd{
+    grid-area: nd;
+}
+#some{
+    grid-area: some;
+}
+#my{
+    grid-area: my;
+}
+@media(width<500px){
+    .container{
+        width: 100vw;
+        margin: 0 auto;
+        height: 100vh;
+    overflow: hidden;
+    color: white;
+    
+    
+        
+        background-image: linear-gradient(#f9ce34,#ee2a7b, #6228d7);
+        display: grid;
+    grid-template-columns:repeat(4,400px) ;
+    grid-template-rows: 70px 150px 250px 150px;
+    grid-template-areas: "me me me me me"
+                          "ad ad ad ad ad"
+                          "my my my my my"
+                          "some some some some some";
+    
+    
+    gap:5px;
+    }
+    #me{
+        grid-area: me;
+    }
+    #adver{
+        grid-area: ad;
+    }
+    #emo{
+        grid-area: em;
+    }
+    #nd{
+        grid-area: nd;
+    }
+    #some{
+        grid-area: some;
+    }
+    #my{
+        grid-area: my;
+    }
+
+}
+.confirm-Box{
+    background-color:rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:honeydew;
+}
+.message-box{
+    background: #fff;
+    text-align:center ;
+    font-family: arial;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+
+}
+.button-box{
+    margin-top: 30px;
+}
+.yes-button,
+.no-button{
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 20px;
+    border:none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.yes-button{
+    background: green;
+    color:#fff;
+}
+.no-button{
+    background: red;
+    color:#fff;
+}
